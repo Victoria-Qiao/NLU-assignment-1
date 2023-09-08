@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16860\viewh6600\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 For question 5:\
+Make sure nltk is installed in your environment \
+1. Use the following command line to run \'93part-of-speech\'94 module to generate training and development data files which convert sentences into sequences of tags of part of speech, you can find \'93tag_train.txt\'94 and \'93tag_dev.txt\'94 in your data folder after finishing running code.\
+\
+Python rnn.py --mode \'93part-of-speech\'94 --data_folder \'93../data\'94 --data_file \'93/wiki-train.txt\'94 --generated_file \'93tag_train.txt\'94\
+Python rnn.py --mode \'93part-of-speech\'94 --data_folder \'93../data\'94 --data_file \'93/wiki-dev.txt\'94 --generated_file \'93tag_dev.txt\'94\
+\
+2. Put the provided \'93tag.wiki.txt\'94 in the folder which \'93tag_train.txt\'94 and \'93tag_dev.txt\'94 locate in\
+3. Use command line to run \'93train-np-part-of-speech\'94 module to train the model based on \'91tag_train.txt\'92 and test the model using \'91tag_dev.txt\'92\
+\
+Python rnn.py --mode \'93train-np-part-of-speech\'94 --data_folder \'93../data\'94 --hdim 50 --lookback 2 --lr 0.5}
